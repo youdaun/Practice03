@@ -9,13 +9,13 @@ public class Ex20 {
 		Scanner sc = new Scanner(System.in);
 		
 		int num = (int)(Math.random()*100)+1;
-		boolean bb = true;
+//		boolean bb = true;
 		
 		System.out.println("=========================");
 		System.out.println("    [숫자맞추기게임 시작]    ");
 		System.out.println("=========================");
 		
-		while(bb) {
+		while(true) {
 			System.out.print(">>");
 			int a = sc.nextInt();
 			
@@ -24,8 +24,11 @@ public class Ex20 {
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				sc.nextLine();
 				String yn = sc.nextLine();
-				if( yn.equals("y")) {
-				    bb = false;
+				if(yn.equals("y")) {
+				    break;
+				}
+				else if(yn.equals("n")) {
+					continue;
 				}
 			}
 			else if(a <= num) {

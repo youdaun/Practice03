@@ -43,7 +43,7 @@ public class Ex19_1 {
 					break;
 					
 				default: 
-					System.out.println("다시입략헤주세요");
+					System.out.println("다시입력해주세요");
 					break;
 			}
 			
