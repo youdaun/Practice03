@@ -21,16 +21,12 @@ public class Ex20 {
 			
 			if(a == num) {
 				System.out.println("맞았습니다.");
-				System.out.println("게임을 종료하시겠습니까?(y/n)");
+				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
+				sc.nextLine();
 				String yn = sc.nextLine();
-				
 				if( yn.equals("y")) {
 				    bb = false;
 				}
-				else if( yn.equals("n")) {
-					System.out.println("**");
-				}
-				
 			}
 			else if(a <= num) {
 				System.out.println("더 높게");
@@ -42,6 +38,10 @@ public class Ex20 {
 				System.out.println("잘못입력하셨습니다.");
 			}
 		}
+		
+		System.out.println("=========================");
+		System.out.println("    [숫자맞추기게임 종료]    ");
+		System.out.println("=========================");
 		
 		sc.close();
 
